@@ -1,5 +1,6 @@
 #include "ext_include.h"
 #include "Isorenderer.h"
+#include "Contentmgr.h"
 
 int resX = 1024;
 int resY = 768;
@@ -69,6 +70,7 @@ int main(int argc, char* argv[])
 	}
 
 	Isorenderer iso;
+	Contentmgr cont(renderer);
 
 	while(running)
 	{
@@ -97,13 +99,15 @@ int main(int argc, char* argv[])
 		SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
 		SDL_RenderClear(renderer);
 
-		iso.rendering(renderer);
+		iso.rendering(renderer, cont);
 		SDL_RenderCopy(renderer, iso.maintexture, NULL, NULL);
 
 		SDL_RenderPresent(renderer);
 		SDL_Delay(10);
 	}
 
+	delete iso;
+	delete cont;
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
 	return 0;

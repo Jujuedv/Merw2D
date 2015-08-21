@@ -1,5 +1,5 @@
-SRC=main.cpp Vec2D.cpp Isorenderer.cpp
-HDR=ext_include.h Isorenderer.h Vec2D.h
+SRC=main.cpp Vec2D.cpp Isorenderer.cpp Contentmgr.cpp
+HDR=ext_include.h Isorenderer.h Vec2D.h Contentmgr.h
 BIN=engine
 OBJ=$(SRC:%cpp=%o)
 CXX=/usr/bin/clang++

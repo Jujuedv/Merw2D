@@ -30,7 +30,7 @@ SDL_Texture* Isorenderer::textureDraw(SDL_Renderer* renderer) //(int[][] &map, i
 	return texture;
 }
 
-void Isorenderer::rendering(SDL_Renderer* renderer) //(SDL_Renderer* renderer, int * map))
+void Isorenderer::rendering(SDL_Renderer* renderer, Contentmgr manager) //(SDL_Renderer* renderer, int * map))
 {
 	SDL_Rect target;
 	target.h = 100;
@@ -38,7 +38,7 @@ void Isorenderer::rendering(SDL_Renderer* renderer) //(SDL_Renderer* renderer, i
 	target.x = 0;
 	target.y = 0;
 	Vec2D loc_iso;
-	SDL_Texture* texture = textureDraw(renderer);
+	SDL_Texture* texture = manager.getTexture(0);
 	for(int x = 0; x < 10; x++)
 	{
 		for(int y = 0; y < 10; y++)

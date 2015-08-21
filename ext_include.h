@@ -1,5 +1,5 @@
 #ifndef _EXT_INCLUDE_H_
-#define _EXT_INCLUDE_H_ 
+#define _EXT_INCLUDE_H_
 
 #include <iostream>
 #include <fstream>
