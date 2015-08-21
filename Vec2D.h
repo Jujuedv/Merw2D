@@ -1,5 +1,5 @@
-#ifndef _Vec2D_h_
-#define _Vec2D_h_ 
+#ifndef _VEC2D_H_
+#define _VEC2D_H_ 
 
 #include "ext_include.h"
 

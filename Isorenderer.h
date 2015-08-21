@@ -1,5 +1,5 @@
-#ifndef _Isorenderer_h_
-#define _Isorenderer_h_
+#ifndef _ISORENDERER_H_ 
+#define _ISORENDERER_H_
 
 #include "ext_include.h"
 #include "Vec2D.h"
