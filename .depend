@@ -1,3 +1,0 @@
-main.o: main.cpp ext_include.h Isorenderer.h Vec2D.h
-Vec2D.o: Vec2D.cpp Vec2D.h ext_include.h
-Isorenderer.o: Isorenderer.cpp Isorenderer.h ext_include.h Vec2D.h
