@@ -1,13 +1,6 @@
-#ifndef _EXT_INCLUDE_H_
-#define _EXT_INCLUDE_H_
+#ifndef _EXTINCLUDE_H_
+#define _EXTINCLUDE_H_
 
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <random>
-#include <ctime>
-#include <cmath>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include "ext_include_win.h"
 
 #endif

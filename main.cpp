@@ -106,8 +106,6 @@ int main(int argc, char* argv[])
 		SDL_Delay(10);
 	}
 
-	delete iso;
-	delete cont;
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
 	return 0;
