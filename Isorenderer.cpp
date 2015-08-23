@@ -30,7 +30,7 @@ SDL_Texture* Isorenderer::textureDraw(SDL_Renderer* renderer) //(int[][] &map, i
 	return texture;
 }
 
-void Isorenderer::rendering(SDL_Renderer* renderer, Contentmgr manager) //(SDL_Renderer* renderer, int * map))
+void Isorenderer::rendering(SDL_Renderer* renderer, Contentmgr &manager) //(SDL_Renderer* renderer, int * map))
 {
 	SDL_Rect target;
 	target.h = 100;

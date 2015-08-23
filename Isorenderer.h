@@ -17,7 +17,7 @@ public:
 	Vec2D conToIso(Vec2D kartvec);
 	Vec2D conToKart(Vec2D isovec);
 	SDL_Texture* textureDraw(SDL_Renderer* renderer); //(int[][] &map, int x, int y);
-	void rendering(SDL_Renderer* renderer, Contentmgr manager); //(SDL_Renderer* renderer, int * map);
+	void rendering(SDL_Renderer* renderer, Contentmgr &manager); //(SDL_Renderer* renderer, int * map);
 };
 
 #endif
