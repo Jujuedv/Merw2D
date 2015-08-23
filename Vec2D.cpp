@@ -69,18 +69,18 @@ Vec2D Vec2D::operator /=(double rhs)
 
 bool Vec2D::operator ==(const Vec2D &rhs) const
 {
-	if(abs(x - rhs.x) > 1e-9)
+	if(std::abs(x - rhs.x) > 1e-9)
 		return false;
-	if(abs(y - rhs.y) > 1e-9)
+	if(std::abs(y - rhs.y) > 1e-9)
 		return false;
 	return true;
 }
 
 bool Vec2D::operator <(const Vec2D &rhs) const
 {
-	if(abs(x - rhs.x) > 1e-9)
+	if(std::abs(x - rhs.x) > 1e-9)
 		return x < rhs.x;
-	if(abs(y - rhs.y) > 1e-9)
+	if(std::abs(y - rhs.y) > 1e-9)
 		return y < rhs.y;
 	return false;
 }
